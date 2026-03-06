@@ -9,38 +9,39 @@ Aplicação de teste executada via terminal e com interações através do termi
 ![License](https://img.shields.io/badge/license-MIT-blue)
 ![Status](https://img.shields.io/badge/status-active-success)
 
-## Funcionalidades
+##:chart_with_upwards_trend: Funcionalidades
 
-- Criar tarefas
-- Editar tarefas
-- Sistema de login
-- Dashboard com estatísticas
+- Cadastrando Os Proprietarios e Endereços
+- Lista Os Proprietarios e Endereços
+- Cadastro de Proprietarios e Endereços
+- Inicaliza a instancia para persistir a transação no Banco de Dados
+- Faz o commit para o Banco de Dados após as transações
+- Deleta Proprietarios
+- Altera Proprietarios
 
-- ## Tecnologias
+- ##:computer: Tecnologias
 
-- JavaScript
-- Node.js
-- Express
-- MongoDB
-- React
+- Java
+- JPA
+- Hibernate
+- MysQSL
+
 
 - ## Instalação
+- 
+:hammer:Pré-requisitos
+. Antes de começar, você precisa ter instalado:
+. Java Development Kit (JDK 17 ou superior)
+. Apache Maven ou Gradle
+. Um banco de dados como MySQL ou PostgreSQL
 
-```bash
-git clone https://github.com/seuusuario/projeto.git
-cd projeto
-npm install
-npm start
-
-
+:pushpin:Verifique a instalação:
+```
+java -version
+mvn -version
+======================================
+````
+:pushpin:Adicione ao arquivo pom.xml:
 ---
 
 ## 7️⃣ Como usar
-Explique rapidamente como usar.
-
-```markdown
-## Uso
-
-1. Crie uma conta
-2. Adicione tarefas
-3. Acompanhe seu progresso no dashboard
