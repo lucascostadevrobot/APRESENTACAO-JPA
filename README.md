@@ -78,4 +78,48 @@ dependencies {
     implementation 'com.mysql:mysql-connector-j:8.3.0'
 }
 ````
+🗄 Configuração do JPA:
+Após as configurações mencionadas acima está na hora de configurarmos o JPA, siga as etapas abaixo:
+. Crie o arquivo:
+````
+src/main/resources/META-INF/persistence.xml
+````
+. Abaixo estou colocando um exemplo de configuração, mas lembre-se que essa configuração pode variar de acordo com a sua arquitetura e seu Banco de Dados.
+````
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence"
+             version="3.0">
+
+    <persistence-unit name="jpa-example">
+
+        <properties>
+
+            <property name="jakarta.persistence.jdbc.url"
+                      value="jdbc:mysql://localhost:3306/seubanco"/>
+
+            <property name="jakarta.persistence.jdbc.user"
+                      value="root"/>
+
+            <property name="jakarta.persistence.jdbc.password"
+                      value="senha"/>
+
+            <property name="jakarta.persistence.jdbc.driver"
+                      value="com.mysql.cj.jdbc.Driver"/>
+
+            <property name="hibernate.dialect"
+                      value="org.hibernate.dialect.MySQLDialect"/>
+
+            <property name="hibernate.hbm2ddl.auto"
+                      value="update"/>
+
+            <property name="hibernate.show_sql"
+                      value="true"/>
+
+        </properties>
+
+    </persistence-unit>
+
+</persistence>
+````
+
+ 
 ## 7️⃣ Como usar
