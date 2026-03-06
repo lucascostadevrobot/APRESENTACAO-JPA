@@ -70,6 +70,12 @@ mvn -version
 
 </dependencies>
 ````
----
-
+:pushpin:Adicione ao arquivo Gradle:
+```
+dependencies {
+    implementation 'org.hibernate.orm:hibernate-core:6.4.4.Final'
+    implementation 'jakarta.persistence:jakarta.persistence-api:3.1.0'
+    implementation 'com.mysql:mysql-connector-j:8.3.0'
+}
+````
 ## 7️⃣ Como usar
