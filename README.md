@@ -9,8 +9,7 @@ Aplicação de teste executada via terminal e com interações através do termi
 ![License](https://img.shields.io/badge/license-MIT-blue)
 ![Status](https://img.shields.io/badge/status-active-success)
 
-- 
-:chart_with_upwards_trend:   Funcionalidades
+:chart_with_upwards_trend:          ##Funcionalidades
 
 - Cadastrando Os Proprietarios e Endereços
 - Lista Os Proprietarios e Endereços
