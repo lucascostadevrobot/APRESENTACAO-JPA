@@ -78,7 +78,8 @@ dependencies {
     implementation 'com.mysql:mysql-connector-j:8.3.0'
 }
 ````
-🗄 Configuração do JPA:
+:chart_with_upwards_trend:Configuração do JPA:
+
 Após as configurações mencionadas acima está na hora de configurarmos o JPA, siga as etapas abaixo:
 . Crie o arquivo:
 ````
@@ -120,6 +121,118 @@ src/main/resources/META-INF/persistence.xml
 
 </persistence>
 ````
+:chart_with_upwards_trend: Exemplo de Entidade:
+
+O exemplo de Entidade abaixo está extensivo e complexo por fazer parte da camada de Entidades do projeto, mas fique a vontade para criar suas Entidades de acordo com sua Modelagem de Classe e UML.
+<details>
+<summary>🔧 Passo a passo</summary>
+
+````
+import javax.persistence.*;
+import java.util.Objects;
+
+@Entity
+public class Proprietarios {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
+
+    @Column
+    private String nome;
+    @Column
+    private Integer idade;
+    @Column
+    private boolean ativo;
+
+
+    @ManyToOne(cascade=CascadeType.PERSIST)
+    private EnderecoPredial enderecoPredial;
+
+    public Proprietarios(Integer id, String nome, Integer idade, boolean ativo) {
+        this.id = id;
+        this.nome = nome;
+        this.idade = idade;
+        this.ativo = ativo;
+    }
+
+    public Proprietarios(EnderecoPredial enderecoPredial, String nome, Integer idade, boolean ativo) {
+        this.enderecoPredial = enderecoPredial;
+        this.nome = nome;
+        this.idade = idade;
+        this.ativo = ativo;
+    }
+
+
+    public Proprietarios() {
+    }
+
+
+    public EnderecoPredial getEnderecoPredial() {
+        return enderecoPredial;
+    }
+
+    public void setEnderecoPredial(EnderecoPredial enderecoPredial) {
+        this.enderecoPredial = enderecoPredial;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public Integer getIdade() {
+        return idade;
+    }
+
+    public void setIdade(Integer idade) {
+        this.idade = idade;
+    }
+
+    public boolean isAtivo() {
+        return ativo;
+    }
+
+    public void setAtivo(boolean ativo) {
+        this.ativo = ativo;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        Proprietarios that = (Proprietarios) o;
+        return ativo == that.ativo && Objects.equals(id, that.id) && Objects.equals(nome, that.nome) && Objects.equals(idade, that.idade) && Objects.equals(enderecoPredial, that.enderecoPredial);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, nome, idade, ativo, enderecoPredial);
+    }
+
+    @Override
+    public String toString() {
+        return "Proprietarios{" +
+                "id=" + id +
+                ", nome='" + nome + '\'' +
+                ", idade=" + idade +
+                ", ativo=" + ativo +
+                ", enderecoPredial=" + enderecoPredial +
+                '}';
+    }
+}
+````
+</details> ```
 
  
 ## 7️⃣ Como usar
