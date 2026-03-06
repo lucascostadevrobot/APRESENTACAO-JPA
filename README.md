@@ -123,10 +123,10 @@ src/main/resources/META-INF/persistence.xml
 ````
 :chart_with_upwards_trend: Exemplo de Entidade:
 
-O exemplo de Entidade abaixo está extensivo e complexo por fazer parte da camada de Entidades do projeto, mas fique a vontade para criar suas Entidades de acordo com sua Modelagem de Classe e UML. Clique na SETA PASSO A PASSO:
+O exemplo de Entidade abaixo está extensivo e complexo por fazer parte da camada de Entidades do projeto, mas fique a vontade para criar suas Entidades de acordo com sua Modelagem de Classe e UML. Clique em CÓDIGO COMPLETO ABAIXO:
 
 <details>
-<summary>🔧 Passo a passo</summary>
+<summary>🔧 Código Completo</summary>
 
 ````
 import javax.persistence.*;
