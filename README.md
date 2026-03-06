@@ -1,7 +1,7 @@
 # APRESENTAÇÃO JPA
 
 Esse projeto tem como o intuito aplicar meus conhecimentos sobre JPA utilizando a Linguagem de Progamação Java.
-
+- 
 # TaskFlow
 
 Aplicação de teste executada via terminal e com interações através do terminal.
@@ -9,6 +9,7 @@ Aplicação de teste executada via terminal e com interações através do termi
 ![License](https://img.shields.io/badge/license-MIT-blue)
 ![Status](https://img.shields.io/badge/status-active-success)
 
+- 
 ##:chart_with_upwards_trend: Funcionalidades
 
 - Cadastrando Os Proprietarios e Endereços
@@ -26,9 +27,8 @@ Aplicação de teste executada via terminal e com interações através do termi
 - Hibernate
 - MysQSL
 
-
-- ## Instalação
 - 
+- ## Instalação
 :hammer:Pré-requisitos
 . Antes de começar, você precisa ter instalado:
 . Java Development Kit (JDK 17 ou superior)
@@ -43,5 +43,5 @@ mvn -version
 ````
 :pushpin:Adicione ao arquivo pom.xml:
 ---
-
+- 
 ## 7️⃣ Como usar
