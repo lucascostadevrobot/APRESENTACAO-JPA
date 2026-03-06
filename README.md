@@ -10,7 +10,7 @@ Aplicação de teste executada via terminal e com interações através do termi
 ![Status](https://img.shields.io/badge/status-active-success)
 
 - 
-:chart_with_upwards_trend:  ##Funcionalidades
+  ##:chart_with_upwards_trend:Funcionalidades
 
 - Cadastrando Os Proprietarios e Endereços
 - Lista Os Proprietarios e Endereços
@@ -27,7 +27,6 @@ Aplicação de teste executada via terminal e com interações através do termi
 - Hibernate
 - MysQSL
 
-- 
 - ## Instalação
 :hammer:Pré-requisitos
 . Antes de começar, você precisa ter instalado:
