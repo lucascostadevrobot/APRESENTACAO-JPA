@@ -29,7 +29,7 @@ Aplicação de teste executada via terminal e com interações através do termi
 - MysQSL
 ---
 
-- ##:computer:Instalação
+:computer:Instalação
 :hammer:Pré-requisitos
 . Antes de começar, você precisa ter instalado:
 . Java Development Kit (JDK 17 ou superior)
