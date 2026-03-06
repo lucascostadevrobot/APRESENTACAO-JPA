@@ -8,6 +8,7 @@ Aplicação de teste executada via terminal e com interações através do termi
 
 ![License](https://img.shields.io/badge/license-MIT-blue)
 ![Status](https://img.shields.io/badge/status-active-success)
+---
 
 :chart_with_upwards_trend:          ##Funcionalidades
 
@@ -18,6 +19,7 @@ Aplicação de teste executada via terminal e com interações através do termi
 - Faz o commit para o Banco de Dados após as transações
 - Deleta Proprietarios
 - Altera Proprietarios
+---
 
 - ##:computer: Tecnologias
 
@@ -25,6 +27,7 @@ Aplicação de teste executada via terminal e com interações através do termi
 - JPA
 - Hibernate
 - MysQSL
+---
 
 - ## Instalação
 :hammer:Pré-requisitos
@@ -41,5 +44,5 @@ mvn -version
 ````
 :pushpin:Adicione ao arquivo pom.xml:
 ---
-- 
+
 ## 7️⃣ Como usar
